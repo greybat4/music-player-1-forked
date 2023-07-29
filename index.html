@@ -1,0 +1,986 @@
+<!--DOCTYPE html tells the browser that the document is using the HTML5 standard. -->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- beginning of the code -->
+  <html>
+    <!-- head section -->
+    <head>
+      <!-- In this case, UTF-8 is the character encoding being used, which supports a wide range of characters from various languages. -->
+      <meta charset="UTF-8" />
+      <!-- The width=device-width part sets the width of the viewport to the width of the device's screen. -->
+      <!-- The initial-scale=1.0 part sets the initial zoom level when the page is first loaded -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- X-UA-Compatible is an HTTP header that tells IE which version to use for rendering the webpage. -->
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <!-- The rel="stylesheet" attribute indicates that the linked file is a stylesheet.
+The href="styles.css" attribute specifies the path or URL to the CSS file. -->
+      <link rel="stylesheet" href="styles.css" />
+      <!-- The classic way to use a Font Awesome Kit - just one line of javascript. -->
+      <script
+        src="https://kit.fontawesome.com/9289145011.js"
+        crossorigin="anonymous"
+      ></script>
+      <title>Music Player by Navneet Adlak</title>
+    </head>
+    <!-- body section begining -->
+    <body>
+      <!-- main-container -->
+      <div class="main-container">
+      <!-- navigation bar section to explore -->
+      <nav>
+        <!-- music player icon div -->
+        <div id="player-icon">
+          <div id="player-logo">
+            <img src="images/music-player-icon.png" />
+          </div>
+
+          <!-- music player name -->
+          <div id="music-player-name">Music <br /><b>Player</b></div>
+
+          <!-- favourites secction -->
+          <div id="favourites">
+            <span>Favourites</span>
+          </div>
+        </div>
+
+        <!-- search bar div-section -->
+        <div id="search-bar-and-more">
+          <div id="search-bar">
+            <form>
+              <input type="text" placeholder="Search" />
+              <!-- search icon from font awesome -->
+              <i
+                class="fa-sharp fa-solid fa-magnifying-glass"
+                style="color: #f5f5f5;"
+              ></i>
+            </form>
+          </div>
+          <!-- placing notification bell -->
+          <div id="notification">
+            <i class="fa-solid fa-bell" style="color: #ffffff;"></i>
+          </div>
+          <!-- user details and image section -->
+          <div id="user-image">
+            <img src="images/user-image.jpg" />
+          </div>
+        </div>
+      </nav>
+      <!-- end of the nevigation section -->
+<!-- start of resposnsiveness section -->
+<div class="response">
+      <!-- main section for music player home page-->
+      <main>
+        <!-- home screen carousel -->
+        <div id="new-release">
+          <img src="images/pop-hit-3.jpg" />
+          <img src="images/punjabi-3.jpg" />
+          <img src="images/new-release-mix.jpg" />
+          
+        </div>
+
+        <div class="latest-release-container">
+          <div class="latest-release-header">
+            <p>Latest Release</p>
+          </div>
+          <div class="latest-release-cards-container">
+            <div class="latest-release-card">
+              <div class="song-name-and-img-container">
+                <div class="latest-release-img-container">
+                  <label for="play-btn-checkbox1"
+                    ><i class="fas latest-release-play-btn fa-play play-1"></i
+                    ><i
+                      class="latest-release-pause-btn fas fa-pause pause-1"
+                    ></i
+                  ></label>
+                </div>
+                <div>
+                  <p class="song-name">Bones</p>
+                  <p class="date">JAN 11, 2023</p>
+                </div>
+              </div>
+
+              <div class="latest-release-dropdown-container">
+                <label for="latest-release-checkbox1"
+                  ><i class="fas more-details fa-ellipsis-h"></i
+                ></label>
+                <input type="checkbox" id="latest-release-checkbox1" />
+                <div class="latest-release-dropdown">
+                  <div class="links-container">
+                    <i class="fas fa-play"></i>
+                    <a href="">Play Now</a>
+                  </div>
+
+                  <hr />
+
+                  <div class="links-container">
+                    <i class="fas fa-plus"></i>
+                    <a href="">Add To Queue</a>
+                  </div>
+
+                  <hr />
+
+                  <div class="links-container">
+                    <i class="fas fa-bars"></i>
+                    <a href="">Add To Favourites</a>
+                  </div>
+
+                  <hr />
+
+                  <div class="links-container">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <a href=""><span></span>Get Info</a>
+                  </div>
+                </div>
+                <p class="time">2:49</p>
+              </div>
+            </div>
+            <div class="latest-release-card">
+              <div class="song-name-and-img-container">
+                <div class="latest-release-img-container">
+                  <label for="play-btn-checkbox2"
+                    ><i class="fas latest-release-play-btn fa-play play-2"></i
+                    ><i
+                      class="latest-release-pause-btn fas fa-pause pause-2"
+                    ></i
+                  ></label>
+                </div>
+                <div>
+                  <p class="song-name">Shark</p>
+                  <p class="date">FEB 01, 2023</p>
+                </div>
+              </div>
+
+              <div class="latest-release-dropdown-container">
+                <label for="latest-release-checkbox2"
+                  ><i class="fas more-details fa-ellipsis-h"></i
+                ></label>
+                <input type="checkbox" id="latest-release-checkbox2" />
+                <div class="latest-release-dropdown">
+                  <div class="links-container">
+                    <i class="fas fa-play"></i>
+                    <a href="">Play Now</a>
+                  </div>
+
+                  <hr />
+
+                  <div class="links-container">
+                    <i class="fas fa-plus"></i>
+                    <a href="">Add To Queue</a>
+                  </div>
+
+                  <hr />
+
+                  <div class="links-container">
+                    <i class="fas fa-bars"></i>
+                    <a href="">Add To Favourites</a>
+                  </div>
+
+                  <hr />
+
+                  <div class="links-container">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <a href=""><span></span>Get Info</a>
+                  </div>
+                </div>
+                <p class="time">2:50</p>
+              </div>
+            </div>
+          </div>
+          <div class="latest-release-cards-container">
+            <div class="latest-release-card">
+              <div class="song-name-and-img-container">
+                <div class="latest-release-img-container">
+                  <label for="play-btn-checkbox3"
+                    ><i class="fas latest-release-play-btn fa-play play-3"></i
+                    ><i
+                      class="latest-release-pause-btn fas fa-pause pause-3"
+                    ></i
+                  ></label>
+                </div>
+                <div>
+                  <p class="song-name">Crushed</p>
+                  <p class="date">AUG 20, 2022</p>
+                </div>
+              </div>
+
+              <div class="latest-release-dropdown-container">
+                <label for="latest-release-checkbox3"
+                  ><i class="fas more-details fa-ellipsis-h"></i
+                ></label>
+                <input type="checkbox" id="latest-release-checkbox3" />
+                <div class="latest-release-dropdown">
+                  <div class="links-container">
+                    <i class="fas fa-play"></i>
+                    <a href="">Play Now</a>
+                  </div>
+
+                  <hr />
+
+                  <div class="links-container">
+                    <i class="fas fa-plus"></i>
+                    <a href="">Add To Queue</a>
+                  </div>
+
+                  <hr />
+
+                  <div class="links-container">
+                    <i class="fas fa-bars"></i>
+                    <a href="">Add To Favourites</a>
+                  </div>
+
+                  <hr />
+
+                  <div class="links-container">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <a href=""><span></span>Get Info</a>
+                  </div>
+                </div>
+                <p class="time">3:12</p>
+              </div>
+            </div>
+            <div class="latest-release-card">
+              <div class="song-name-and-img-container">
+                <div class="latest-release-img-container">
+                  <label for="play-btn-checkbox4"
+                    ><i class="fas latest-release-play-btn fa-play play-4"></i
+                    ><i
+                      class="latest-release-pause-btn fas fa-pause pause-4"
+                    ></i
+                  ></label>
+                </div>
+                <div>
+                  <p class="song-name">Tied</p>
+                  <p class="date">May, 2023</p>
+                </div>
+              </div>
+
+              <div class="latest-release-dropdown-container">
+                <label for="latest-release-checkbox4"
+                  ><i class="fas more-details fa-ellipsis-h"></i
+                ></label>
+                <input type="checkbox" id="latest-release-checkbox4" />
+                <div class="latest-release-dropdown">
+                  <div class="links-container">
+                    <i class="fas fa-play"></i>
+                    <a href="">Play Now</a>
+                  </div>
+
+                  <hr />
+
+                  <div class="links-container">
+                    <i class="fas fa-plus"></i>
+                    <a href="">Add To Queue</a>
+                  </div>
+
+                  <hr />
+
+                  <div class="links-container">
+                    <i class="fas fa-bars"></i>
+                    <a href="">Add To Favourites</a>
+                  </div>
+
+                  <hr />
+
+                  <div class="links-container">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <a href=""><span></span>Get Info</a>
+                  </div>
+                </div>
+
+                <p class="time">3:40</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- pupolar artist section -->
+        <div class="popular-artists-container">
+          <div class="popular-artists-heading">
+            <p>Popular Artists</p>
+          </div>
+          <div class="popular-artists-img-container">
+            <div class="popular-artist1">
+              <div class="popular-artist1-img1">
+                <div class="popular-artists">
+                  <a href="index2.html"><i class="fa-solid fa-play"></i> </a>
+                </div>
+              </div>
+              <!--end of popular artists1 image section-->
+              <p>Imagine Dragon</p>
+            </div>
+            <!--end of popular artists1 section-->
+            <!-- artist 2 conatainer-->
+            <div class="popular-artist1">
+              <div class="popular-artist1-img1">
+                <div class="popular-artists popular-artist2">
+                  <a href="index2.html"
+                    ><i class="fa-solid fa-play" style="color: #ffffff;"></i
+                  ></a>
+                </div>
+              </div>
+              <!--end of popular artists2 image section-->
+              <p>KK</p>
+            </div>
+            <!--end of popular artists2 section-->
+            <!-- artist 3 conatainer-->
+            <div class="popular-artist1">
+              <div class="popular-artist1-img1">
+                <div class="popular-artists popular-artist3">
+                  <a href="index2.html"
+                    ><i class="fa-solid fa-play" style="color: #ffffff;"></i
+                  ></a>
+                </div>
+              </div>
+              <!--end of popular artists3 image section-->
+              <p>Ed Sheeran</p>
+            </div>
+            <!--end of popular artists3 section-->
+            <!-- artist 4 conatainer-->
+            <div class="popular-artist1">
+              <div class="popular-artist1-img1">
+                <div class="popular-artists popular-artist4">
+                  <a href="index2.html"
+                    ><i class="fa-solid fa-play" style="color: #ffffff;"></i
+                  ></a>
+                </div>
+              </div>
+              <!--end of popular artists4 image section-->
+              <p>Sonu Nigam</p>
+            </div>
+            <!--end of popular artists4 section-->
+            <!-- artist 5 conatainer-->
+            <div class="popular-artist1">
+              <div class="popular-artist1-img1">
+                <div class="popular-artists popular-artist5">
+                  <a href="index2.html"
+                    ><i class="fa-solid fa-play" style="color: #ffffff;"></i
+                  ></a>
+                </div>
+              </div>
+              <!--end of popular artists5 image section-->
+              <p>Charlie Puth</p>
+            </div>
+            <!--end of popular artists5 section-->
+            <!-- artist 6 conatainer-->
+            <div class="popular-artist1">
+              <div class="popular-artist1-img1">
+                <div class="popular-artists popular-artist6">
+                  <a href="index2.html"
+                    ><i class="fa-solid fa-play" style="color: #ffffff;"></i
+                  ></a>
+                </div>
+              </div>
+              <!--end of popular artists6 image section-->
+              <p>Arijit Singh</p>
+            </div>
+            <!--end of popular artists6 section-->
+          </div>
+          <!--end of popular artists img section-->
+        </div>
+        <!--end of popular artists main section-->
+
+        <!-- beginning of stations container-->
+        <div class="station-container">
+          <div class="station-logo">
+            <div class="station-logo-img"></div>
+            <!-- end of station logo image -->
+          </div>
+          <!-- end of station logo -->
+
+          <!-- begin of station img container -->
+          <div class="station-img-container">
+            <div class="station-img">
+              <div class="img-1"></div>
+              <!-- end of image -->
+            </div>
+            <!-- end of station image -->
+            <p class="station-name">Love</p>
+          </div>
+          <!-- end of station image container-->
+
+          <!-- begin of station img2(retro) container -->
+          <div class="station-img-container">
+            <div class="station-img">
+              <div class="img-1 img-2"></div>
+              <!-- end of image -->
+            </div>
+            <!-- end of station image -->
+            <p class="station-name">Retro</p>
+          </div>
+          <!-- end of station image2 container-->
+
+          <!-- begin of station img3(chill) container -->
+          <div class="station-img-container">
+            <div class="station-img">
+              <div class="img-1 img-3"></div>
+              <!-- end of image -->
+            </div>
+            <!-- end of station image -->
+            <p class="station-name">Chill</p>
+          </div>
+          <!-- end of station image3 container-->
+
+          <!-- begin of station img4(workout) container -->
+          <div class="station-img-container">
+            <div class="station-img">
+              <div class="img-1 img-4"></div>
+              <!-- end of image -->
+            </div>
+            <!-- end of station image -->
+            <p class="station-name">Workout</p>
+          </div>
+          <!-- end of station image4 container-->
+
+          <!-- begin of station img5(pop) container -->
+          <div class="station-img-container">
+            <div class="station-img">
+              <div class="img-1 img-5"></div>
+              <!-- end of image -->
+            </div>
+            <!-- end of station image -->
+            <p class="station-name">Pop</p>
+          </div>
+          <!-- end of station image5 container-->
+
+          <!-- begin of station img6(rock) container -->
+          <div class="station-img-container">
+            <div class="station-img">
+              <div class="img-1 img-6"></div>
+              <!-- end of image -->
+            </div>
+            <!-- end of station image -->
+            <p class="station-name">Rock</p>
+          </div>
+          <!-- end of station image6 container-->
+        </div>
+        <!-- end of station container -->
+
+        <!-- begin of mood container -->
+        <div class="mood-container">
+          <div class="mood-img-container">
+            <p>Party</p>
+          </div>
+          <!-- end of mood img1 -->
+          <div class="mood-img-container mood-img-2">
+            <p>Road Trip</p>
+          </div>
+          <!-- end of mood img2 -->
+          <div class="mood-img-container mood-img-3">
+            <p>Electronic</p>
+          </div>
+          <!-- end of mood img3 -->
+        </div>
+        <!-- end of mood container -->
+
+        <!-- latest english container -->
+        <div class="latest-english-section">
+          <div class="latest-english-heading">
+            <p>Latest English</p>
+          </div>
+          <!-- end of heading -->
+          <div class="latest-english-songs">
+            <div class="latest-english-song-card">
+              <img src="images/latest-english/die-for-you.png" />
+              <p>Die For You</p>
+              <p>FEB 24, 2023</p>
+            </div>
+            <!-- end of song card-1 -->
+            <div class="latest-english-song-card">
+              <img src="images/latest-english/enemy.jpg" />
+              <p>Enemy</p>
+              <p>APR 20, 2023</p>
+            </div>
+            <!-- end of song card-2 -->
+            <div class="latest-english-song-card">
+              <img src="images/latest-english/people.jpg" />
+              <p>People</p>
+              <p>DEC 28, 2022</p>
+            </div>
+            <!-- end of song card-3 -->
+            <div class="latest-english-song-card">
+              <img src="images/latest-english/angel.jpg" />
+              <p>Angel part-1</p>
+              <p>May 18, 2023</p>
+            </div>
+            <!-- end of song card-4 -->
+            <div class="latest-english-song-card">
+              <img src="images/latest-english/Satellite.jpg" />
+              <p>Satellite</p>
+              <p>Mar 23, 2023</p>
+            </div>
+            <!-- end of song card-5 -->
+            <div class="latest-english-song-card">
+              <img src="images/latest-english/vampire.jpg" />
+              <p>vampire</p>
+              <p>JUNE 13, 2023</p>
+            </div>
+            <!-- end of song card-6 -->
+          </div>
+          <!-- end of latest english songs -->
+        </div>
+        <!-- end of latest english section -->
+
+        <!-- latest hindi container html is same because using same styles -->
+        <div class="latest-english-section">
+          <div class="latest-english-heading">
+            <p>Latest Hindi</p>
+          </div>
+          <!-- end of heading -->
+          <div class="latest-english-songs">
+            <div class="latest-english-song-card">
+              <img src="images/latest-hindi/tum-kya-mile.jpg" />
+              <p>Tum Kya Mile</p>
+              <p>MAY 29, 2023</p>
+            </div>
+            <!-- end of song card-1 -->
+            <div class="latest-english-song-card">
+              <img src="images/latest-hindi/tere-vaaste.jpg" />
+              <p>Tere Vaaste</p>
+              <p>MAY 20, 2023</p>
+            </div>
+            <!-- end of song card-2 -->
+            <div class="latest-english-song-card">
+              <img src="images/latest-hindi/jehda-nasha.jpg" />
+              <p>Jehda Nasha</p>
+              <p>MAR 08, 2023</p>
+            </div>
+            <!-- end of song card-3 -->
+            <div class="latest-english-song-card">
+              <img src="images/latest-hindi/apna-bana-le.jpg" />
+              <p>Apna Bana Le</p>
+              <p>May 10, 2023</p>
+            </div>
+            <!-- end of song card-4 -->
+            <div class="latest-english-song-card">
+              <img src="images/latest-hindi/deewani.jpg" />
+              <p>Deewani</p>
+              <p>Mar 01, 2023</p>
+            </div>
+            <!-- end of song card-5 -->
+            <div class="latest-english-song-card">
+              <img src="images/latest-hindi/ohabbat.jpg" />
+              <p>Mohabbat</p>
+              <p>JUNE 22, 2023</p>
+            </div>
+            <!-- end of song card-6 -->
+          </div>
+          <!-- end of latest hindi songs -->
+        </div>
+        <!-- end of latest hindi section -->
+      </main>
+
+      <aside>
+        <div id="queue-2" class="queue-section">
+          <div class="queue-heading">
+            <p>Queue</p>
+            <div class="queue-btn">
+              <label for="mycheckbox"
+                >Queue<span
+                  ><i class="fa-sharp fa-solid fa-angle-down"></i></span
+              ></label>
+            </div>
+            <!-- end of queue-btn on right -->
+          </div>
+          <!-- end of queue heading -->
+
+          <div class="queue-songs-container">
+            <div class="queue-song">
+              <div class="song-image-container">
+                <p class="song-number">01</p>
+                <div class="image-container">
+                  <img
+                    class="queue-song-img"
+                    src="images/queue-img/kissmemore.jpg"
+                  />
+                  <i class="fa-solid play-btn fa-play"></i>
+                </div>
+                <!-- end of image container -->
+                <div class="song-and-artist-container">
+                  <p class="song-name">Kiss Me More</p>
+                  <p class="artist-name">Doja Cat</p>
+                </div>
+                <!-- end of song-and-artist-container -->
+              </div>
+              <!-- end of image container -->
+              <span class="nav-link"
+                ><button>
+                  <i class="far wishlist-icon fa-heart"></i>
+                </button>
+              </span>
+            </div>
+            <!-- end of queue song no 1 -->
+
+            <!-- begin of queue song 2 -->
+            <div class="queue-song">
+              <div class="song-image-container">
+                <p class="song-number">02</p>
+                <div class="image-container">
+                  <img
+                    class="queue-song-img"
+                    src="images/queue-img/attention.jpg"
+                  />
+                  <i class="fa-solid play-btn fa-play"></i>
+                </div>
+                <!-- end of image container -->
+                <div class="song-and-artist-container">
+                  <p class="song-name">Attention</p>
+                  <p class="artist-name">Charlie Puth</p>
+                </div>
+                <!-- end of song-and-artist-container -->
+              </div>
+              <!-- end of image container -->
+              <span class="nav-link"
+                ><button>
+                  <i class="far wishlist-icon fa-heart"></i>
+                </button>
+              </span>
+            </div>
+            <!-- end of queue song-2 -->
+
+             <!-- begin of queue song 3 -->
+             <div class="queue-song">
+              <div class="song-image-container">
+                <p class="song-number">03</p>
+                <div class="image-container">
+                  <img
+                    class="queue-song-img"
+                    src="images/queue-img/starboy.jpg"
+                  />
+                  <i class="fas currently-on-song fa-stream"></i>
+                </div>
+                <!-- end of image container -->
+                <div class="song-and-artist-container">
+                  <p class="song-name">Starboy</p>
+                  <p class="artist-name">The Weeknd</p>
+                </div>
+                <!-- end of song-and-artist-container -->
+              </div>
+              <!-- end of image container -->
+              <span class="nav-link"
+                ><button>
+                  <i class="far wishlist-icon fa-heart"></i>
+                </button>
+              </span>
+            </div>
+            <!-- end of queue song-3 -->
+
+             <!-- begin of queue song 4 -->
+             <div class="queue-song">
+              <div class="song-image-container">
+                <p class="song-number">04</p>
+                <div class="image-container">
+                  <img
+                    class="queue-song-img"
+                    src="images/queue-img/roar.jpg"
+                  />
+                  <i class="fa-solid play-btn fa-play"></i>
+                </div>
+                <!-- end of image container -->
+                <div class="song-and-artist-container">
+                  <p class="song-name">Roar</p>
+                  <p class="artist-name">Katy Perry</p>
+                </div>
+                <!-- end of song-and-artist-container -->
+              </div>
+              <!-- end of image container -->
+              <span class="nav-link"
+                ><button>
+                  <i class="far wishlist-icon fa-heart"></i>
+                </button>
+              </span>
+            </div>
+            <!-- end of queue song-4 -->
+
+             <!-- begin of queue song 5 -->
+             <div class="queue-song">
+              <div class="song-image-container">
+                <p class="song-number">05</p>
+                <div class="image-container">
+                  <img
+                    class="queue-song-img"
+                    src="images/queue-img/cheapthrills.jpg"
+                  />
+                  <i class="fa-solid play-btn fa-play"></i>
+                </div>
+                <!-- end of image container -->
+                <div class="song-and-artist-container">
+                  <p class="song-name">Cheap Thrills</p>
+                  <p class="artist-name">Sia</p>
+                </div>
+                <!-- end of song-and-artist-container -->
+              </div>
+              <!-- end of image container -->
+              <span class="nav-link"
+                ><button>
+                  <i class="far wishlist-icon fa-heart"></i>
+                </button>
+              </span>
+            </div>
+            <!-- end of queue song-5 -->
+
+             <!-- begin of queue song 6 -->
+             <div class="queue-song">
+              <div class="song-image-container">
+                <p class="song-number">06</p>
+                <div class="image-container">
+                  <img
+                    class="queue-song-img"
+                    src="images/queue-img/shapeofyou.jpg"
+                  />
+                  <i class="fa-solid play-btn fa-play"></i>
+                </div>
+                <!-- end of image container -->
+                <div class="song-and-artist-container">
+                  <p class="song-name">Shape Of You</p>
+                  <p class="artist-name">Ed Sheeran</p>
+                </div>
+                <!-- end of song-and-artist-container -->
+              </div>
+              <!-- end of image container -->
+              <span class="nav-link"
+                ><button>
+                  <i class="far wishlist-icon fa-heart"></i>
+                </button>
+              </span>
+            </div>
+            <!-- end of queue song-6 -->
+
+             <!-- begin of queue song 7 -->
+             <div class="queue-song">
+              <div class="song-image-container">
+                <p class="song-number">07</p>
+                <div class="image-container">
+                  <img
+                    class="queue-song-img"
+                    src="images/queue-img/we'regood.jpg"
+                  />
+                  <i class="fa-solid play-btn fa-play"></i>
+                </div>
+                <!-- end of image container -->
+                <div class="song-and-artist-container">
+                  <p class="song-name">We're Good</p>
+                  <p class="artist-name">Dua Lipa</p>
+                </div>
+                <!-- end of song-and-artist-container -->
+              </div>
+              <!-- end of image container -->
+              <span class="nav-link"
+                ><button>
+                  <i class="far wishlist-icon fa-heart"></i>
+                </button>
+              </span>
+            </div>
+            <!-- end of queue song-7 -->
+
+             <!-- begin of queue song 8 -->
+             <div class="queue-song">
+              <div class="song-image-container">
+                <p class="song-number">08</p>
+                <div class="image-container">
+                  <img
+                    class="queue-song-img"
+                    src="images/queue-img/taylorswift.jpg"
+                  />
+                  <i class="fa-solid play-btn fa-play"></i>
+                </div>
+                <!-- end of image container -->
+                <div class="song-and-artist-container">
+                  <p class="song-name">Blankspace</p>
+                  <p class="artist-name">Taylor Swift</p>
+                </div>
+                <!-- end of song-and-artist-container -->
+              </div>
+              <!-- end of image container -->
+              <span class="nav-link"
+                ><button>
+                  <i class="far wishlist-icon fa-heart"></i>
+                </button>
+              </span>
+            </div>
+            <!-- end of queue song-8 -->
+
+             <!-- begin of queue song 9 -->
+             <div class="queue-song">
+              <div class="song-image-container">
+                <p class="song-number">09</p>
+                <div class="image-container">
+                  <img
+                    class="queue-song-img"
+                    src="images/queue-img/good4u.jpg"
+                  />
+                  <i class="fa-solid play-btn fa-play"></i>
+                </div>
+                <!-- end of image container -->
+                <div class="song-and-artist-container">
+                  <p class="song-name">Good 4 U</p>
+                  <p class="artist-name">Olivia Rodrigo</p>
+                </div>
+                <!-- end of song-and-artist-container -->
+              </div>
+              <!-- end of image container -->
+              <span class="nav-link"
+                ><button>
+                  <i class="far wishlist-icon fa-heart"></i>
+                </button>
+              </span>
+            </div>
+            <!-- end of queue song-9 -->
+
+             <!-- begin of queue song 10 -->
+             <div class="queue-song">
+              <div class="song-image-container">
+                <p class="song-number">10</p>
+                <div class="image-container">
+                  <img
+                    class="queue-song-img"
+                    src="images/queue-img/sugar.jpg"
+                  />
+                  <i class="fa-solid play-btn fa-play"></i>
+                </div>
+                <!-- end of image container -->
+                <div class="song-and-artist-container">
+                  <p class="song-name">Sugar</p>
+                  <p class="artist-name">Maroon 5</p>
+                </div>
+                <!-- end of song-and-artist-container -->
+              </div>
+              <!-- end of image container -->
+              <span class="nav-link"
+                ><button>
+                  <i class="far wishlist-icon fa-heart"></i>
+                </button>
+              </span>
+            </div>
+            <!-- end of queue song10 -->
+
+             <!-- begin of queue song 11 -->
+             <div class="queue-song">
+              <div class="song-image-container">
+                <p class="song-number">11</p>
+                <div class="image-container">
+                  <img
+                    class="queue-song-img"
+                    src="images/queue-img/7rings.jpg"
+                  />
+                  <i class="fa-solid play-btn fa-play"></i>
+                </div>
+                <!-- end of image container -->
+                <div class="song-and-artist-container">
+                  <p class="song-name">7 Rings</p>
+                  <p class="artist-name">Ariana Grande</p>
+                </div>
+                <!-- end of song-and-artist-container -->
+              </div>
+              <!-- end of image container -->
+              <span class="nav-link"
+                ><button>
+                  <i class="far wishlist-icon fa-heart"></i>
+                </button>
+              </span>
+            </div>
+            <!-- end of queue song-11 -->
+
+             <!-- begin of queue song 12 -->
+             <div class="queue-song">
+              <div class="song-image-container">
+                <p class="song-number">12</p>
+                <div class="image-container">
+                  <img
+                    class="queue-song-img"
+                    src="images/queue-img/peaches.jpg"
+                  />
+                  <i class="fa-solid play-btn fa-play"></i>
+                </div>
+                <!-- end of image container -->
+                <div class="song-and-artist-container">
+                  <p class="song-name">Peaches</p>
+                  <p class="artist-name">Justin Bieber</p>
+                </div>
+                <!-- end of song-and-artist-container -->
+              </div>
+              <!-- end of image container -->
+              <span class="nav-link"
+                ><button>
+                  <i class="far wishlist-icon fa-heart"></i>
+                </button>
+              </span>
+            </div>
+            <!-- end of queue song-12 -->
+
+          </div>
+          <!-- end of queue songs container -->
+        </div>
+        <!-- end entire queue section -->
+      </aside>
+      <!-- end of aside section(queue) -->
+
+      <!--start of footer section  -->
+      <footer>
+        <!-- Song Thumnail, Title, Singer -->
+        <div id="footer-song-info">
+            <div id="footer-song-image"></div>
+            <div id="footer-song-name">
+                <span style="color:white">Starboy</span>
+                <span class="subtitle">The Weeknd</span>
+            </div>
+            <div>
+                <span class="nav-link">
+                  <i class="far fa-heart subtitle"></i>
+              </span>
+                <span class="nav-link">
+                  <i class="fas fa-ban subtitle"></i>
+              </span>
+            </div>
+        </div>
+
+        <!-- Contains Player Controls: Play, Pause, Next, Previous, Shuffle and Repeat with Slider -->
+        <div id="player">
+
+            <div id="player-control">
+                <div><i class="fas fa-random" style="color:white;"></i></div>
+                <div><i class="fas fa-step-backward" style="color:white;"></i></div>
+                <div><i class="far fa-pause-circle" style="font-size: 2rem; color:white;"></i></div>
+                <div><i class="fas fa-step-forward" style="color:white;"></i></div>
+                <div><i class="fas fa-redo" style="color:white;"></i></div>
+            </div>
+
+            <div id="player-slider-container">
+                <div class="subtitle">
+                    0:00
+                </div>
+
+                <input type="range" min="0" max="100" value="25">
+
+                <div class="subtitle">
+                    3:51
+                </div>
+            </div>
+        </div>
+
+        <!-- Volume buttom, Expand button -->
+        <div class="player-extras">
+            <div>
+                <i class="fas fa-list-ul" style="color:white;"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop" style="color:white;"></i>
+            </div>
+
+            <div class="volume-container" style="color:white;">
+                <span><i class="fas fa-volume-up"></i></span>
+                <input type="range" min="0" max="100" value="50" class="slider" id="volume-slider">
+            </div>
+            <div><i class="fas fa-expand" style="color:white;"></i></div>
+        </div>
+
+      </footer>
+      <!-- end of footer section -->
+      </div>
+      <!-- end of resposnsivness section -->
+      </div>
+      <!-- end of main container -->
+    </body>
+
+    <script src="script.js"></script>
+  </html>
+</html>
